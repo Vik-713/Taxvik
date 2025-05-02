@@ -1,0 +1,374 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1B263B;
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo-placeholder {
+    text-align: center;
+}
+
+.logo-placeholder h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.logo-placeholder p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 2.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #A8D5BA;
+}
+
+.hero {
+    position: relative;
+    background: url('https://www.m1xchange.com/thought-xchange/wp-content/uploads/2023/09/shutterstock_2139780347-scaled.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 4rem 2rem;
+    height: 75vh; /* Reduced height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent 70%);
+    z-index: 0;
+}
+
+.background-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.background-shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(45deg, rgba(70, 140, 152, 0.15), transparent);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.shape-1 {
+    top: 10%;
+    left: 5%;
+}
+
+.shape-2 {
+    bottom: 15%;
+    right: 10%;
+}
+
+.financial-graphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #3ecaff, #00fcff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px #1B263B;
+    opacity: 0;
+    animation: slideInFromLeft 1s ease-in-out forwards;
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px #1B263B;
+    opacity: 0;
+    animation: slideInFromRight 1s ease-in-out forwards 0.3s;
+}
+
+@keyframes slideInFromLeft {
+    0% { opacity: 0; transform: translateX(-30px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+    0% { opacity: 0; transform: translateX(30px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background-color: #A8D5BA;
+    color: #1B263B;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #8CC7A1;
+}
+
+.services {
+    position: relative;
+    padding: 5rem 2rem;
+    background-color: #F5F9F6;
+}
+
+.section-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.decorative-shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    opacity: 0.5;
+}
+
+.services .decorative-shape {
+    top: 10%;
+    left: 5%;
+    transform: rotate(45deg);
+    fill: rgba(77, 168, 218, 0.1);
+}
+
+.contact .decorative-shape {
+    bottom: 10%;
+    right: 5%;
+    fill: rgba(168, 213, 186, 0.1);
+}
+
+.services h2 {
+    text-align: center;
+    color: #1B263B;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background-color: #F5F9F6;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #A8D5BA, #4DA8DA);
+    z-index: -1;
+    border-radius: 12px;
+}
+
+.service-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-card i {
+    color: #1B263B;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #1B263B;
+}
+
+.service-card:hover {
+    transform: translateY(-10px) rotate(2deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact {
+    position: relative;
+    background-color: #4DA8DA;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.contact h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.contact p {
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.floating-element {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 50;
+    transition: transform 0.3s ease;
+}
+
+.floating-element svg {
+    width: 100%;
+    height: 100%;
+    fill: rgba(77, 168, 218, 0.3);
+}
+
+footer {
+    background-color: #1B263B;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 0.8rem 0;
+    }
+
+    .hero {
+        padding: 6rem 1rem;
+        min-height: 80vh;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .services {
+        padding: 3rem 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .floating-element {
+        width: 40px;
+        height: 40px;
+        bottom: 10px;
+        right: 10px;
+    }
+}
