@@ -3,148 +3,361 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taxvik - Tax Consultant</title>
+    <title>Taxvik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo-placeholder">
-            <h1>Taxvik</h1>
-            <p>Tax Consultant</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <h1>Taxvik</h1>
+        <p>Your trusted partner in Tax, Audit & Compliance</p>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="background-shape shape-1"></div>
-            <div class="background-shape shape-2"></div>
-            <svg class="background-pattern" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <line x1="0" y1="10" x2="100" y2="10" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="0" y1="20" x2="100" y2="20" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="0" y1="30" x2="100" y2="30" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="0" y1="40" x2="100" y2="40" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="0" y1="50" x2="100" y2="50" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="0" y1="60" x2="100" y2="60" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="0" y1="70" x2="100" y2="70" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="0" y1="80" x2="100" y2="80" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="0" y1="90" x2="100" y2="90" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="10" y1="0" x2="10" y2="100" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="20" y1="0" x2="20" y2="100" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="30" y1="0" x2="30" y2="100" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="40" y1="0" x2="40" y2="100" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="50" y1="0" x2="50" y2="100" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="60" y1="0" x2="60" y2="100" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="70" y1="0" x2="70" y2="100" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="80" y1="0" x2="80" y2="100" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-                <line x1="90" y1="0" x2="90" y2="100" stroke="#468C98" stroke-width="0.3" opacity="0.2"/>
-            </svg>
-            <svg class="financial-graphic" viewBox="0 0 200 200">
-                <defs>
-                    <filter id="glow">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
-                        <feMerge>
-                            <feMergeNode in="blur"/>
-                            <feMergeNode in="SourceGraphic"/>
-                        </feMerge>
-                    </filter>
-                </defs>
-            </svg>
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title">Welcome to Taxvik</h1>
-            <p class="hero-subtitle">Empowering Your Financial Future with Expertise and Trust</p>
-            <a href="#services" class="cta-button">Explore Our Services</a>
-        </div>
-    </section>
-
-    <section id="services" class="services">
+    <section id="services" class="section services">
         <div class="section-background">
-            <svg class="decorative-shape" viewBox="0 0 100 100">
-                <polygon points="50,10 90,90 10,90" fill="rgba(77, 168, 218, 0.1)" />
+            <svg class="decorative-shape">
+                <rect width="300" height="300"/>
             </svg>
         </div>
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="service-card">
-                <i class="fas fa-file-invoice-dollar fa-3x"></i>
-                <h3>ITR</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-receipt fa-3x"></i>
-                <h3>GST</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-hand-holding-usd fa-3x"></i>
-                <h3>TDS</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-money-check-alt fa-3x"></i>
-                <h3>PT</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-piggy-bank fa-3x"></i>
-                <h3>PF</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-shield-alt fa-3x"></i>
-                <h3>ESIC</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-search-dollar fa-3x"></i>
-                <h3>Audit</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-book fa-3x"></i>
-                <h3>Accounting</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-balance-scale fa-3x"></i>
-                <h3>Statutory Compliance</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-file-alt fa-3x"></i>
-                <h3>ROC Filings</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-building fa-3x"></i>
-                <h3>Company Incorporation</h3>
-            </div>
-            <div class="service-card">
-                <i class="fas fa-user-check fa-3x"></i>
-                <h3>Internal Audit</h3>
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card hidden">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Statutory Audit</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-search"></i>
+                    <h3>Internal Audit</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                        <h3>Tax Audit</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-invoice"></i>
+                    <h3>GST Audit</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Insurance Audit</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-registered"></i>
+                    <h3>GST Registration</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-upload"></i>
+                    <h3>GST Monthly Filings</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>GST Quarterly Filings</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>GST Annual Returns</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-sync"></i>
+                    <h3>GST Reconciliation & Advisory</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-export"></i>
+                    <h3>GST LUT Filing</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h3>ITR Filing</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-globe"></i>
+                    <h3>NRI Taxation & Advisory</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-id-card"></i>
+                    <h3>PAN/TAN Application</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Advance Tax Calculation</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-import"></i>
+                    <h3>TDS Return Filing</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <h3>Income Tax Notice Handling</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-exchange-alt"></i>
+                    <h3>Transfer Pricing</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-building"></i>
+                    <h3>Private Limited Company</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-handshake"></i>
+                    <h3>LLP Registration</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-users"></i>
+                    <h3>Partnership Firm</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-user"></i>
+                    <h3>OPC Registration</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-signature"></i>
+                    <h3>GST Notice Reply</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-certificate"></i>
+                    <h3>MSME Certificate</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-money-check-alt"></i>
+                    <h3>GST Refund</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-money-bill"></i>
+                    <h3>Payroll Processing</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-piggy-bank"></i>
+                    <h3>PF Registration</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-briefcase-medical"></i>
+                    <h3>ESI Registration</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-gavel"></i>
+                    <h3>Professional Tax</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Labour Welfare Fund</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-invoice"></i>
+                    <h3>Payslip Generation & Form 16 Issuance</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-book"></i>
+                    <h3>Daily Accounting</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-university"></i>
+                    <h3>Bank Reconciliation</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-book-open"></i>
+                    <h3>General Ledger</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Financial Reporting</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Projected Financials</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-excel"></i>
+                    <h3>Provisional Financials</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-home"></i>
+                    <h3>Capital Gain - Property</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>TDS on Property 25QB</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3>TDS on NRI Property</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>CMA Report Preparation</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Capital Gain Calculations</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>Cash Flow & Budget</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-import"></i>
+                    <h3>Annual Return Filing</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-certificate"></i>
+                    <h3>RERA CA Certificate</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Director KYC</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-id-badge"></i>
+                    <h3>DIN Application</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-book"></i>
+                        <h3>Accounts Management</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Director Appointment</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Trust/Society Registration</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-invoice"></i>
+                    <h3>Accounts Finalization</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Startup India Registration</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-warehouse"></i>
+                    <h3>Inventory Accounting</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-import"></i>
+                    <h3>TDS Quarterly Filings</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-building"></i>
+                    <h3>Section 8 Company</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-edit"></i>
+                    <h3>TDS Corrections</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-certificate"></i>
+                    <h3>FSSAI, IEC, Shops License</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-signature"></i>
+                    <h3>Digital Signature</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Auditor Appointment</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-share"></i>
+                    <h3>Share Allotment</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Registered Office Change</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-coins"></i>
+                    <h3>Share Capital Increase</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-times"></i>
+                    <h3>Company Strike Off</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-contract"></i>
+                    <h3>Charge Creation</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-export"></i>
+                    <h3>15CA CB</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-file-alt"></i>
+                    <h3>Networth Certificate</h3>
+                </div>
+                <div class="service-card hidden">
+                    <i class="fas fa-donate"></i>
+                    <h3>Trust Donations Filings</h3>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="section-background">
-            <svg class="decorative-shape" viewBox="0 0 100 100">
-                <circle cx="50" cy="50" r="40" fill="rgba(168, 213, 186, 0.1)" />
-            </svg>
-        </div>
-        <h2>Contact Us</h2>
-        <p>For expert financial solutions, reach out to us!</p>
-        <div class="contact-info">
-            <p><strong>Phone:</strong> <span id="phone-number">+91 9004227615/xxxxxxxxxx</span></p>
+    <section id="why-choose-us" class="section alt">
+        <div class="container">
+            <h2>Why Choose Taxvik?</h2>
+            <ul>
+                <li>Experienced Professionals: Our team of CAs and tax experts brings over a decade of industry expertise.</li>
+                <li>Comprehensive Solutions: From tax filing to compliance, we offer end-to-end financial services.</li>
+                <li>Transparent Pricing: Clear, affordable pricing with no hidden fees.</li>
+                <li>Client-Centric Approach: Dedicated support with quick response times.</li>
+                <li>Technology-Driven: Advanced tools for accurate and efficient service delivery.</li>
+                <li>Trusted by Thousands: Proven track record with over 1200 satisfied clients.</li>
+            </ul>
         </div>
     </section>
 
-    <div class="floating-element">
-        <svg viewBox="0 0 50 50">
-            <rect x="10" y="10" width="30" height="30" fill="rgba(77, 168, 218, 0.3)" />
-        </svg>
-    </div>
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <blockquote>
+                “Taxvik made my GST registration process seamless. Their team guided me through every step, ensuring compliance without stress.”
+                <cite>– Ramesh K., Small Business Owner, Bengaluru</cite>
+            </blockquote>
+            <blockquote>
+                “Their professional team provided exceptional support for my startup’s taxation needs, from incorporation to ITR filing.”
+                <cite>– Anjali M., Startup Founder, Mumbai</cite>
+            </blockquote>
+            <blockquote>
+                “Taxvik’s quick response to my income tax notice was impressive. They resolved it efficiently, saving me time and worry.”
+                <cite>– Priya S., Freelancer, Delhi</cite>
+            </blockquote>
+            <blockquote>
+                “Their accounting services streamlined our financials, making bank loan applications a breeze with accurate CMA reports.”
+                <cite>– Vikram P., SME Owner, Chennai</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="results" class="section alt">
+        <div class="container">
+            <h2>Our Results So Far</h2>
+            <ul>
+                <li>1000+ ITRs Filed: Successfully filed income tax returns for individuals and businesses.</li>
+                <li>500+ Companies Registered: Helped establish Pvt Ltd, LLP, and OPC entities.</li>
+                <li>700+ GST Accounts Managed: Streamlined GST compliance for businesses.</li>
+                <li>1200+ Satisfied Clients: Trusted by clients across industries.</li>
+                <li>300+ Audits Completed: Conducted statutory, tax, and GST audits.</li>
+                <li>2000+ Compliance Filings: Managed TDS, PF, ESI, and ROC filings.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> Phone: +91 9xxxxxxxxx / +91 90042 27615</p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/+919004227615" class="whatsapp-button">Chat Now</a></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:contact@taxvik.com">contact@taxvik.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Address: 123 Financial Hub, MG Road, Bengaluru, Karnataka 560001</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>© 2025 Taxvik. All Rights Reserved.</p>
+        <p>© <span id="year"></span> Taxvik. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
