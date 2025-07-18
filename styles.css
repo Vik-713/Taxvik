@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
@@ -73,7 +73,7 @@ ul li {
 }
 
 ul li::before {
-    content: '\f058'; /* Font Awesome check-circle */
+    content: '\f058';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     color: #004c99;
@@ -285,13 +285,13 @@ blockquote cite {
     top: 10%;
     left: 5%;
     transform: rotate(45deg);
-    fill: rgba(96, 165, 250, 0.1); /* Matches #60A5FA with opacity */
+    fill: rgba(96, 165, 250, 0.1);
 }
 
 .contact .decorative-shape {
     bottom: 10%;
     right: 5%;
-    fill: rgba(167, 243, 208, 0.1); /* Matches #A7F3D0 with opacity */
+    fill: rgba(167, 243, 208, 0.1); 
 }
 
 .services h2 {
@@ -303,30 +303,30 @@ blockquote cite {
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(7, minmax(150px, 1fr)); /* 7 cards per row with min width */
+    grid-template-columns: repeat(7, minmax(150px, 1fr));
     gap: 1.5rem;
     max-width: 1200px;
     margin: 0 auto;
-    justify-content: center; /* Center all cards, including last row */
+    justify-content: center; 
 }
 
 @media (max-width: 1024px) {
     .service-grid {
-        grid-template-columns: repeat(4, minmax(150px, 1fr)); /* 4 cards per row */
+        grid-template-columns: repeat(4, minmax(150px, 1fr));
         justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
     .service-grid {
-        grid-template-columns: repeat(3, minmax(150px, 1fr)); /* 3 cards per row */
+        grid-template-columns: repeat(3, minmax(150px, 1fr)); 
         justify-content: center;
     }
 }
 
 @media (max-width: 480px) {
     .service-grid {
-        grid-template-columns: minmax(150px, 1fr); /* 1 card per row */
+        grid-template-columns: minmax(150px, 1fr); 
         justify-content: center;
     }
 }
@@ -368,10 +368,11 @@ blockquote cite {
 .service-card h3 {
     margin: 0;
     font-size: 1rem;
-    color: #1E40AF; /* Slightly darker blue for contrast */
+    color: #1E40AF;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(96, 165, 250, 0.15); /* Matches #60A5FA */
+    box-shadow: 0 8px 20px rgba(96, 165, 250, 0.15);
 }
+    */
